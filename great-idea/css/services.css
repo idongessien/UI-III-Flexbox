@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,51 +11,57 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 * {
 	/* border: 1px solid red !important; */
-	max-width: 100%; 
+	max-width: 100%;
 }
 
 body {
@@ -83,7 +77,8 @@ h3 {
 /* Header Styles */
 
 header {
-	position: fixed; /* STRETCH GOAL */
+	position: fixed;
+	/* STRETCH GOAL */
 	width: 100%;
 	margin-left: -128px;
 	margin-top: -19px;
@@ -205,8 +200,7 @@ header .logo:hover {
 	width: 30%;
 }
 
-.sec-four div p {
-}
+.sec-four div p {}
 
 /* Footer Styles */
 
@@ -234,4 +228,102 @@ footer p a {
 
 footer :last-child {
 	text-align: center;
+}
+
+/* SERVICES PAGE  */
+
+/* Top Section  */
+
+.top-sec {
+	/* background: grey; */
+	margin: 7% 0 3%;
+	box-sizing: border-box;
+	line-height: 1.8rem;
+	font-size: 1.4rem;
+}
+
+.top-sec img {
+	width: 100%;
+	margin: 0;
+}
+
+.top-sec img, .top-sec h2 {
+	margin-bottom: 2%;
+}
+
+.top-sec h2 {
+	font-size: 2.5rem;
+}
+
+/* Mid Section  */
+
+.mid-sec {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 2% 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: wrap;
+	line-height: 1.8rem;
+	font-size: 1.3rem;
+}
+
+.mid-sec h3 {
+	font-size: 1.5rem;
+}
+
+.mid-sec div {
+	border: 1px solid black;
+	padding: 2%;
+	background: #EEE;
+	width: 45%;
+	margin: 1.5% 0;
+}
+
+.mid-sec div button {
+	border: 1px solid black;
+	padding: 1.5% 7%;
+	margin-top: 3%;
+	font-size: .9rem;
+}
+
+/* Bottom Section  */
+
+.bottom-sec {
+	margin: 3%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.bottom-sec h3 {
+	font-size: 1.5rem;
+}
+
+.bottom-sec p {
+	/* width: 48%; */
+	margin: 2% 0;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+}
+
+.bottom-sec ul {
+	margin: 1% 4%;
+}
+
+.bottom-sec ul li {
+	font-size: 1.2rem;
+	line-height: 2.3rem;
+	list-style-type: disc;
+}
+
+.bottom-sec :first-child {
+	width: 49%;
+}
+
+.bottom-sec :last-child {
+	width: 46%;
+}
+
+.bottom-sec .services-info-img {
+	width: 100%;
 }
