@@ -58,3 +58,148 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+	border:1px solid rgba(256, 0, 0, 0) !important;
+	max-width: 100%;
+}
+
+body {
+	font-size: 1.4rem;
+	width: 100%;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+/* Header Styles */
+
+header {
+    position: fixed;
+    z-index: 99;
+	/* STRETCH GOAL */
+	width: 100%;
+    margin-left: -3px;
+    margin-top: -5px;
+	display: flex;
+	justify-content: space-around;
+	background: #FFF;
+	padding: 1%;
+	border-bottom: solid 2px lightslategray !important;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	width: 70%;
+}
+
+header nav ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav ul li {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: rgb(177, 177, 177);
+}
+
+header nav ul li a:hover {
+	color: black;
+}
+
+header nav ul li a:active {
+	color: black;
+}
+
+header .logo {
+	opacity: 0.7;
+}
+
+header .logo:hover {
+	opacity: 1;
+}
+
+                                    /* ABOUT PAGE STYLES  */
+
+.banner {
+    position: fixed;
+    margin:0;
+    right:0;
+    z-index:-1;
+}
+
+.titlee {
+    font-size: 500%;
+    color: white;
+    z-index: 0;
+    position:fixed;
+    top: 45%;
+    left:38%;
+}
+
+.sec-container {
+    position: relative;
+    z-index: 1;
+    background: white;
+    margin-top: 59%;
+    width: 100%;
+    padding: 3% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-container .sec-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sec-1 div {
+    width: 30%;
+}
+
+form {
+    margin-top: 4%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+form input {
+    border: 1px solid black !important;
+    border-radius: 8px;
+    height: 50px;
+    width: 30%;
+    margin: 1% 4% 3%;
+    padding: 1%;
+    font-size: 1.3rem;
+    color: rgb(180, 180, 180);
+}
+
+form textarea {
+    border: 1px solid black !important;
+    border-radius: 8px;
+    margin-top: 1%;
+    font-size: 1.3rem;
+    padding: 1%;
+    color: rgb(180, 180, 180);
+}
+
+iframe {
+    margin: 4% 0;
+}
+
+footer  {
+    margin: 4% 0;
+    text-align: center;
+    font-size: 1rem;
+}
